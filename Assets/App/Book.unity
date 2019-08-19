@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1885,7 +1885,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     ResetVariablesOnEnable: 0
@@ -2834,9 +2834,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 240
-        width: 131
+        width: 219
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -4238,7 +4238,7 @@ MonoBehaviour:
         - UnloadDoneEvent
         paramDataPos: 00000000
         paramByteDataSize: 00000000
-    - name: reset indexing
+    - name: go top main page
       description: 
       colorIndex: 0
       position:
@@ -4285,7 +4285,7 @@ MonoBehaviour:
         fsmFloatParams: []
         fsmIntParams:
         - useVariable: 1
-          name: current Page Index
+          name: new index
           tooltip: 
           showInInspector: 1
           networkSync: 0
@@ -4384,7 +4384,7 @@ MonoBehaviour:
         name: APP / PAGES / BACK TO MENU
         isSystemEvent: 0
         isGlobal: 1
-      toState: reset indexing
+      toState: go top main page
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -4435,7 +4435,7 @@ MonoBehaviour:
     manualUpdate: 0
     outVariableIndices: 
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents:
     - name: APP / PAGES / NEXT
       isSystemEvent: 0
@@ -4747,7 +4747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -160.00003, y: -0.000015258789}
+  m_AnchoredPosition: {x: -160.00003, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1252125793
@@ -5056,7 +5056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5319,7 +5319,7 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: Language Manager
-    startState: check player prefs
+    startState: next frame event
     states:
     - name: check player prefs
       description: 
@@ -5327,7 +5327,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 64
-        y: 240
+        y: 192
         width: 143
         height: 48
       isBreakpoint: 0
@@ -5414,8 +5414,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 608
-        y: 272
+        x: 640
+        y: 304
         width: 128
         height: 16
       isBreakpoint: 0
@@ -5612,8 +5612,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 240
-        y: 160
+        x: 272
+        y: 192
         width: 199
         height: 32
       isBreakpoint: 0
@@ -5701,8 +5701,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 256
-        y: 224
+        x: 288
+        y: 320
         width: 151
         height: 48
       isBreakpoint: 0
@@ -5829,6 +5829,66 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000100000001000000020000000300000000000000010000000000000000000000040000000500000001000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000001000000
+    - name: next frame event
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 135
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: check player prefs
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -7496,22 +7556,14 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 400
-        y: 272
-        width: 234
-        height: 32
+        x: 1168
+        y: 384
+        width: 190
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: wait one frame
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.UiCanvasGroupSetProperties
@@ -7653,19 +7705,11 @@ MonoBehaviour:
         x: 880
         y: 272
         width: 158
-        height: 32
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: wait one frame
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.UiCanvasGroupSetProperties
@@ -7807,11 +7851,19 @@ MonoBehaviour:
         x: 928
         y: 480
         width: 134
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Show and enable controls
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -7913,11 +7965,19 @@ MonoBehaviour:
         x: 928
         y: 416
         width: 161
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Show and enable controls
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -8201,11 +8261,19 @@ MonoBehaviour:
         x: 928
         y: 544
         width: 149
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Show and enable controls
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -8710,7 +8778,7 @@ MonoBehaviour:
           name: NO
           isSystemEvent: 0
           isGlobal: 0
-        toState: Show and enable controls
+        toState: wait one frame
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -9888,7 +9956,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 1
+    editorFlags: 3
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
