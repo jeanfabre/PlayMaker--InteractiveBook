@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ec061b5ce3f6849bc6ee6497489ccb, type: 3}
+  m_Name: EcoAutoPacker
+  m_EditorClassIdentifier: 
+  includeFolders:
+  - 272ecb5cbd15540cd91e07132e99fa73
+  - 97f5753daf93a439a8fbb8182f0e4801
+  - e9a72691e8ada4994a1a38e608996c4f
+  - 865958c09130b4840aa9f902fb1d0049
+  - e2ff57c3ccc6d4aa9a3cc3fcfb6b05c9
+  excludeFolders:
+  - 168c438f260094425b2ae99bf57d7e0b
+  includeFiles: []
+  excludeFiles:
+  - 5d242b33e088e4ac3964df20f56763ea
+  youTubeLists: []
+  webLinkList: []
+  modulesList: []
+  ecoFilterList: []
+  foldersToInclude: []
+  filesToInclude: []
+  foldersToExclude: []
+  filesToExclude: []
+  author: Jean Fabre
+  type: Sample
+  version: 1.0
+  keyWords: Audio Book narrative book
+  packageName: Interactive Book
+  targetDirectory: /Users/jeanfabre/Documents/Work/Unity/PlayMaker/Ecosystem/Repositories/PlayMakerCustomActions_U2017/PlayMaker/Ecosystem/Custom
+    Samples/Resources
+  targetRepository: 5
+  categoryString: 
+  targetPackageTextFile: /Users/jeanfabre/Documents/Work/Unity/PlayMaker/Ecosystem/Repositories/PlayMakerCustomActions_U2017/PlayMaker/Ecosystem/Custom
+    Samples/Resources/Interactive Book.sample.txt
+  packagetypeselection:
+  - ActionPackage
+  - SamplePackage
+  - TemplatePackage
+  packagetypeselected: 1
+  UminVselection:
+  - ActionPackage
+  - SamplePackage
+  - TemplatePackage
+  UminVselected: 0
+  PMminVselection:
+  - ActionPackage
+  - SamplePackage
+  - TemplatePackage
+  PMminVselected: 0
+  Pingtype:
+  - None
+  - Asset Path
+  - Menu
+  Pingtypeselected: 1
+  uMinVersionSelected: 11
+  pmMinVersionSelected: 0
+  categoryList:
+  - API
+  - Analytics
+  - AnimateVariables
+  - Animation
+  - Android
+  - Animator
+  - Application
+  - Array
+  - AssetBundle
+  - Audio
+  - AudioMixer
+  - BlendShapes
+  - Camera
+  - Color
+  - Convert
+  - CrossPlatformInput
+  - Debug
+  - Device
+  - Editor
+  - Effects
+  - Encryption
+  - Files
+  - FOV
+  - GarbageCollection
+  - GameObject
+  - GUI
+  - GuiElement
+  - GUILayout
+  - Input
+  - JSON
+  - Level
+  - Lights
+  - Logic
+  - Material
+  - Math
+  - Mesh
+  - Microphone
+  - MobileGameController
+  - Movement
+  - NavMeshAgent
+  - NoiseModule
+  - Particles
+  - Physics
+  - Physics2D
+  - PlayerPrefs
+  - QualitySettings
+  - Quaternion
+  - Rect
+  - RectTransform
+  - RenderSettings
+  - Renderer
+  - Resources
+  - Screen
+  - ScriptControl
+  - ShapeModule
+  - Social
+  - Sprite
+  - StateMachine
+  - String
+  - Texture
+  - Time
+  - Transform
+  - Trigonometry
+  - UnityAds
+  - UnityObject
+  - Vector2
+  - Vector3
+  - VideoClip
+  - VideoPlayer
+  - VR
+  - Web
+  - WebCam
+  - uGui
+  categorySelected: 51
+  assetPath: {fileID: 102900000, guid: 286679d3acbba4ba892ee485d0889434, type: 3}
+  pingMenu: {fileID: 0}
+  fileExistsCheck: 0
+  expandedList: 0
+  showList: 1
+  showSetFoldersAndFiles: 1
+  foldout: 1
